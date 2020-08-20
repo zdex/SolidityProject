@@ -1,13 +1,16 @@
 App = {
+  
   loading: false,
   contracts: {},
-
-  load: async () => {
+  
+  load: async () => {  // created function load which is async
+    console.log("app loading");
     await App.loadWeb3()
     await App.loadAccount()
     await App.loadContract()
     await App.render()
   },
+
 
   // https://medium.com/metamask/https-medium-com-metamask-breaking-change-injecting-web3-7722797916a8
   loadWeb3: async () => {
