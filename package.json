@@ -5,7 +5,7 @@
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
-  },
+  }, 
   "scripts": {
     "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && sexit 1"
